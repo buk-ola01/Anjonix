@@ -183,6 +183,39 @@ p {
      text-align: left;
      margin-bottom: 10px;
 }
+.core-value > div {
+     padding: 40px 25px;
+     background-color: #eee;
+     border-radius: 10px;
+     border-top-style: solid;
+     border-top-color: #ffd504;
+}
+.mission .fa-solid,
+.vision .fa-solid {
+     text-align: center;
+     font-size: 40px;
+     color: #ffd504;
+}
+.mission:hover,
+.vision:hover {
+     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.core-value {
+     display: flex;
+     gap: 2em;
+}
+
+.core-value-container h1,
+.core-value-container p {
+     text-align: center;
+     margin-bottom: 20px;
+}
+
+.core-value-container {
+     margin-top: 25px;
+     font-size: 16px;
+}
+
 .footer-logo img {
      max-width: 120px;
 }
@@ -201,6 +234,9 @@ footer {
      font-size: 16px;
      margin-top: 10px;
 }
+.footer-container a:hover {
+     color: #ffd504;
+}
 .footer-container > div {
      display: flex;
      flex-direction: column;
@@ -218,33 +254,6 @@ footer h2 {
 .contact p {
      margin-top: 10px;
      color: #4d4d4d;
-}
-.mission,
-.vision {
-     padding: 40px 25px;
-     background-color: #eee;
-     border-radius: 10px;
-     border-top-style: solid;
-     border-top-color: #ffd504;
-}
-.mission:hover,
-.vision:hover {
-     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-}
-
-.core-value-container h1,
-.core-value-container p {
-     text-align: center;
-     margin-bottom: 20px;
-}
-
-.core-value-container {
-     margin-top: 25px;
-     font-size: 16px;
-}
-.core-value {
-     display: flex;
-     gap: 2em;
 }
 
 @media screen and (max-width: 700px) {
@@ -285,6 +294,17 @@ footer h2 {
      .testimonials-col img {
           margin-left: 0px;
           margin-right: 10px;
+     }
+     .footer-container {
+          display: flex;
+          flex-direction: column;
+     }
+     .core-value {
+          display: flex;
+          flex-direction: column;
+     }
+     .slideshow-container {
+          width: 100%;
      }
 }
 
