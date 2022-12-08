@@ -1,0 +1,249 @@
+* {
+     margin: 0%;
+     padding: 0%;
+     box-sizing: border-box;
+     font-family: "Poppins", sans-serif;
+     text-decoration: none;
+}
+nav {
+     background-color: #202020;
+     box-shadow: 0px 0px 10px;
+}
+.navbar-container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     color: #f2f2f2;
+     max-width: 100%;
+}
+
+.navbar-links ul {
+     margin: 0;
+     padding: 0;
+     display: flex;
+}
+
+.navbar-links li {
+     list-style-type: none;
+}
+
+.navbar-links ul li a {
+     text-decoration: none;
+     color: #f2f2f2;
+     display: block;
+     padding: 1rem;
+}
+
+.navbar-links ul li a::after {
+     content: "";
+     transition: 0.4s ease;
+     left: 0;
+     display: block;
+     margin: auto;
+     height: 3px;
+     background: yellow;
+     width: 0%;
+}
+
+.navbar-links ul li a:hover {
+     color: yellow;
+}
+
+.navbar-links ul li a:hover::after {
+     width: 100%;
+}
+
+.toggle-button {
+     position: absolute;
+     flex-direction: column;
+     top: 1.55rem;
+     right: 1rem;
+     display: none;
+     justify-content: space-between;
+     width: 30px;
+     height: 21px;
+}
+
+.toggle-button .bar {
+     height: 3px;
+     width: 100%;
+     background-color: white;
+     border-radius: 10px;
+}
+
+.logo {
+     max-height: 60px;
+     width: 120px;
+     margin: 0.5rem;
+}
+
+.slideshow-container {
+     margin: auto;
+     text-align: center;
+     background-color: #ddd;
+     position: relative;
+}
+
+.numbertext {
+     position: absolute;
+     top: 0;
+     color: #f2f2f2;
+     padding: 8px 12px;
+     font-size: 12px;
+}
+
+.dot {
+     height: 15px;
+     width: 15px;
+     margin: 0 2px;
+     background-color: #bbb;
+     border-radius: 50%;
+     display: inline-block;
+     transition: background-color 0.6s ease;
+}
+
+.active {
+     background-color: #1f1f25;
+}
+.center {
+     width: 90%;
+     margin: auto;
+}
+
+.mySlides > img {
+     width: 100%;
+     height: 400px;
+}
+
+.fade {
+     animation-name: fade;
+     animation-duration: 1.5s;
+}
+
+@keyframes fade {
+     from {
+          opacity: 0.4;
+     }
+     to {
+          opacity: 1;
+     }
+}
+p {
+     font-size: 17px;
+     font-weight: 400;
+     line-height: 22px;
+}
+.testimonials {
+     width: 90%;
+     margin: auto;
+     padding-top: 50px;
+     text-align: center;
+}
+
+.testimonials h1 {
+     margin-bottom: 10px;
+}
+
+.row {
+     display: flex;
+     justify-content: space-between;
+     margin-top: 5%;
+}
+
+.testimonials-col {
+     flex-basis: 32%;
+     border-radius: 10px;
+     margin-bottom: 5%;
+     padding: 20px;
+     cursor: pointer;
+     display: flex;
+     background-color: #eee;
+}
+
+.testimonials-col:hover {
+     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.testimonials-col img {
+     height: 40px;
+     margin-left: 5px;
+     margin-right: 20px;
+     border-radius: 50%;
+}
+
+.testimonials-col h3 {
+     margin: 0;
+     text-align: left;
+}
+
+.testimonials-col p {
+     text-align: left;
+     margin-bottom: 10px;
+}
+.footer-logo img {
+     max-height: 60px;
+}
+footer {
+     background-color: #1f1f25;
+}
+.footer-container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     color: white;
+}
+.footer-container a {
+     color: #bbb;
+     font-size: 16px;
+}
+.footer-container > div {
+     display: flex;
+     flex-direction: column;
+}
+.copyright {
+     text-align: center;
+     background-color: #fff42a;
+     font-size: 16px;
+}
+@media screen and (max-width: 700px) {
+     .toggle-button {
+          display: flex;
+     }
+     .navbar-links {
+          width: 100%;
+          display: none;
+     }
+     .navbar {
+          flex-direction: column;
+          align-items: flex-start;
+     }
+     .navbar-links ul {
+          width: 100%;
+          flex-direction: column;
+     }
+     .navbar-links li {
+          width: 100%;
+          text-align: left;
+     }
+     .navbar-links li a {
+          padding: 0.5rem;
+     }
+     .navbar-links.active {
+          display: inline;
+          transition: 1s;
+          position: absolute;
+          top: 80px;
+          right: 0;
+          z-index: 1;
+          padding: 30px;
+     }
+     .row {
+          flex-direction: column;
+     }
+     .testimonials-col img {
+          margin-left: 0px;
+          margin-right: 10px;
+     }
+}
+
+/*# sourceMappingURL=style.css.map */
