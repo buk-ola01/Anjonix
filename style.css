@@ -156,6 +156,8 @@ p {
      border-radius: 10px;
      margin-bottom: 5%;
      padding: 20px;
+     border-top-style: solid;
+     border-top-color: #ffd504;
      cursor: pointer;
      display: flex;
      background-color: #eee;
@@ -216,6 +218,33 @@ footer h2 {
 .contact p {
      margin-top: 10px;
      color: #4d4d4d;
+}
+.mission,
+.vision {
+     padding: 40px 25px;
+     background-color: #eee;
+     border-radius: 10px;
+     border-top-style: solid;
+     border-top-color: #ffd504;
+}
+.mission:hover,
+.vision:hover {
+     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.core-value-container h1,
+.core-value-container p {
+     text-align: center;
+     margin-bottom: 20px;
+}
+
+.core-value-container {
+     margin-top: 25px;
+     font-size: 16px;
+}
+.core-value {
+     display: flex;
+     gap: 2em;
 }
 
 @media screen and (max-width: 700px) {
