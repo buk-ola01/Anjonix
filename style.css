@@ -83,6 +83,7 @@ nav {
      text-align: center;
      background-color: #ddd;
      position: relative;
+     overflow: hidden;
 }
 
 .numbertext {
@@ -183,12 +184,45 @@ p {
      text-align: left;
      margin-bottom: 10px;
 }
+.experience {
+     background-color: #202020;
+}
+.experience-container {
+     padding-bottom: 30px;
+}
+.experience-container > h2 {
+     text-align: center;
+     color: #f2f2f2;
+     margin: 20px 0px;
+}
+.stats-group {
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     gap: 2em;
+}
+
+.stats {
+     text-align: center;
+     color: #eee;
+     background-color: #333333;
+     padding: 20px 30px;
+}
+.stats h2 {
+     color: #545454;
+}
+.stats p {
+     color: #eee;
+}
 .core-value > div {
-     padding: 40px 25px;
-     background-color: #eee;
+     padding: 25px;
+     background-color: #fff;
      border-radius: 10px;
      border-top-style: solid;
      border-top-color: #ffd504;
+}
+.core-value h2 {
+     text-align: center;
 }
 .mission .fa-solid,
 .vision .fa-solid {
@@ -197,7 +231,9 @@ p {
      color: #ffd504;
 }
 .mission:hover,
-.vision:hover {
+.vision:hover,
+.vision,
+.mission {
      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 }
 .core-value {
@@ -208,12 +244,15 @@ p {
 .core-value-container h1,
 .core-value-container p {
      text-align: center;
-     margin-bottom: 20px;
+     color: #f5f5f5;
+     margin-bottom: 10px;
 }
 
 .core-value-container {
-     margin-top: 25px;
+     padding-top: 25px;
+     padding-bottom: 20px;
      font-size: 16px;
+     background-color: #202020;
 }
 
 .footer-logo img {
@@ -306,6 +345,9 @@ footer h2 {
      .slideshow-container {
           width: 100%;
      }
+     .stats-group {
+          flex-direction: column;
+          width: 70%;
+          margin: auto;
+     }
 }
-
-/*# sourceMappingURL=style.css.map */
