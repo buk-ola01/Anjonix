@@ -279,6 +279,7 @@ p {
 .contact-right {
      flex: 50%;
 }
+
 .contact-us-container h1 {
      text-align: center;
      margin: 10px 0;
@@ -302,11 +303,14 @@ input:focus {
      transition: 1s;
 }
 #contact_form textarea {
-     resize: none;
      border: none;
      padding: 10px;
      background-color: #eee;
      border-radius: 15px;
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+     max-width: 100%;
 }
 textarea:focus,
 textarea:active {
