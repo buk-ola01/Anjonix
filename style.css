@@ -421,4 +421,7 @@ footer h2 {
           margin: auto;
           gap: 1.2em;
      }
+     .contact-us {
+          flex-direction: column;
+     }
 }
