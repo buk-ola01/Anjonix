@@ -20,14 +20,14 @@ function showSlides() {
      setTimeout(showSlides, 4000);
 }
 
-function responsiveBar() {
-     var x = document.getElementById("topnav");
-     if (x.className == "topnav") {
-          x.className += " responsive";
-     } else {
-          x.className = "topnav";
-     }
-}
+// function responsiveBar() {
+//      var x = document.getElementById("topnav");
+//      if (x.className == "topnav") {
+//           x.className += " responsive";
+//      } else {
+//           x.className = "topnav";
+//      }
+// }
 
 const toggleButton = document.getElementsByClassName("toggle-button")[0];
 const navBarLinks = document.getElementsByClassName("navbar-links")[0];

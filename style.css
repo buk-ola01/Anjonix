@@ -394,7 +394,6 @@ footer h2 {
      }
      .navbar-links.active {
           display: inline;
-          transition: 1s;
           position: absolute;
           top: 80px;
           right: 0;
